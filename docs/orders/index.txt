@@ -19,7 +19,7 @@ Response:
   Content-Length: 121
   Content-Type: application/json; charset=utf-8
   ETag: "6cd5831e98b0090b64672b5604d9eb2a"
-  X-Runtime: 0.040983
+  X-Runtime: 0.019010
   X-UA-Compatible: IE=Edge,chrome=1
 
   [{"email":"email0@example.com","name":"Order 0","paid":true},{"email":"email1@example.com","name":"Order 1","paid":true}]
@@ -48,13 +48,13 @@ Response:
   Content-Length: 58
   Content-Type: application/json; charset=utf-8
   ETag: "5fffd66f61cdd4ab8881584dbf5e72cf"
-  Location: http://example.org/orders/1
-  X-Runtime: 0.006123
+  Location: http://example.org/orders/9
+  X-Runtime: 0.006262
   X-UA-Compatible: IE=Edge,chrome=1
 
   {"email":"email@example.com","name":"Order 1","paid":true}
 Request:
-  GET /orders/1
+  GET /orders/9
   Accept: application/json
   Content-Type: application/json
   Cookie: 
@@ -66,7 +66,7 @@ Response:
   Content-Length: 58
   Content-Type: application/json; charset=utf-8
   ETag: "5fffd66f61cdd4ab8881584dbf5e72cf"
-  X-Runtime: 0.003829
+  X-Runtime: 0.004752
   X-UA-Compatible: IE=Edge,chrome=1
 
   {"email":"email@example.com","name":"Order 1","paid":true}
@@ -76,7 +76,7 @@ Getting a specific order
 ------------------------
 
 Request:
-  GET /orders/1
+  GET /orders/10
   Accept: application/json
   Content-Type: application/json
   Cookie: 
@@ -88,7 +88,7 @@ Response:
   Content-Length: 59
   Content-Type: application/json; charset=utf-8
   ETag: "d9eaba14696a65b9dfc66bf203d25a13"
-  X-Runtime: 0.002877
+  X-Runtime: 0.003263
   X-UA-Compatible: IE=Edge,chrome=1
 
   {"email":"email@example.com","name":"Old Name","paid":true}
@@ -103,7 +103,7 @@ Parameters:
   * email - Email of user that placed the order
 
 Request:
-  PUT /orders/1
+  PUT /orders/11
   Accept: application/json
   Content-Type: application/json
   Cookie: 
@@ -117,8 +117,8 @@ Response:
   Content-Length: 2
   Content-Type: application/json; charset=utf-8
   ETag: "99914b932bd37a50b983c5e7c90ae93b"
-  Location: http://example.org/orders/1
-  X-Runtime: 0.004792
+  Location: http://example.org/orders/11
+  X-Runtime: 0.005130
   X-UA-Compatible: IE=Edge,chrome=1
 
   {}
@@ -128,7 +128,7 @@ Deleting an order
 -----------------
 
 Request:
-  DELETE /orders/1
+  DELETE /orders/12
   Accept: application/json
   Content-Type: application/json
   Cookie: 
@@ -141,7 +141,7 @@ Response:
   Content-Type: application/json; charset=utf-8
   ETag: "99914b932bd37a50b983c5e7c90ae93b"
   Location: http://example.org/orders
-  X-Runtime: 0.004316
+  X-Runtime: 0.005339
   X-UA-Compatible: IE=Edge,chrome=1
 
   {}

@@ -33,7 +33,7 @@ RSpec.configure do |config|
 end
 
 RspecApiDocumentation.configure do |config|
-  config.format = [:html, :combined_text]
+  config.format = [:json, :combined_text]
   config.url_prefix = "/docs"
   config.curl_host = 'http://rad-example.herokuapp.com'
   config.api_name = "Example App API"
