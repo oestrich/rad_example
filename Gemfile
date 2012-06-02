@@ -4,7 +4,7 @@ gem 'rails', '3.1.3'
 
 gem 'pg'
 gem 'inherited_resources'
-gem 'raddocs', '0.1.1'
+gem 'raddocs', '0.1.2'
 
 # Gems used only for assets and not required
 # in production environments by default.
