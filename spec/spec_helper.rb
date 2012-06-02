@@ -33,12 +33,8 @@ RSpec.configure do |config|
 end
 
 RspecApiDocumentation.configure do |config|
-  config.docs_dir = Rails.root.join("public", "docs")
-  # html pages with the wURL console
-  config.format = [:json, :wurl, :combined_text]
-  # html pages without the wURL console
-  #config.format = [:json, :html]
+  config.format = [:html, :combined_text]
   config.url_prefix = "/docs"
-  config.curl_host = 'http://localhost:3000'
+  config.curl_host = 'http://rad-example.herokuapp.com'
   config.api_name = "Example App API"
 end
