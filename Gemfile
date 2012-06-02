@@ -4,6 +4,7 @@ gem 'rails', '3.1.3'
 
 gem 'pg'
 gem 'inherited_resources'
+gem 'raddocs', '0.1.0'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -22,5 +23,4 @@ end
 group :test, :development do
   gem 'rspec-rails'
   gem 'rspec_api_documentation', :git => "git://github.com/zipmark/rspec_api_documentation.git"
-  gem 'raddocs', '0.1.0'
 end
