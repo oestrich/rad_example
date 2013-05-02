@@ -19,7 +19,7 @@ Response:
   Content-Length: 121
   Content-Type: application/json; charset=utf-8
   ETag: "6cd5831e98b0090b64672b5604d9eb2a"
-  X-Runtime: 0.019010
+  X-Runtime: 0.018795
   X-UA-Compatible: IE=Edge,chrome=1
 
   [{"email":"email0@example.com","name":"Order 0","paid":true},{"email":"email1@example.com","name":"Order 1","paid":true}]
@@ -48,13 +48,13 @@ Response:
   Content-Length: 58
   Content-Type: application/json; charset=utf-8
   ETag: "5fffd66f61cdd4ab8881584dbf5e72cf"
-  Location: http://example.org/orders/9
-  X-Runtime: 0.006262
+  Location: http://example.org/orders/45
+  X-Runtime: 0.010100
   X-UA-Compatible: IE=Edge,chrome=1
 
   {"email":"email@example.com","name":"Order 1","paid":true}
 Request:
-  GET /orders/9
+  GET /orders/45
   Accept: application/json
   Content-Type: application/json
   Cookie: 
@@ -66,7 +66,7 @@ Response:
   Content-Length: 58
   Content-Type: application/json; charset=utf-8
   ETag: "5fffd66f61cdd4ab8881584dbf5e72cf"
-  X-Runtime: 0.004752
+  X-Runtime: 0.005744
   X-UA-Compatible: IE=Edge,chrome=1
 
   {"email":"email@example.com","name":"Order 1","paid":true}
@@ -76,7 +76,7 @@ Getting a specific order
 ------------------------
 
 Request:
-  GET /orders/10
+  GET /orders/46
   Accept: application/json
   Content-Type: application/json
   Cookie: 
@@ -88,7 +88,7 @@ Response:
   Content-Length: 59
   Content-Type: application/json; charset=utf-8
   ETag: "d9eaba14696a65b9dfc66bf203d25a13"
-  X-Runtime: 0.003263
+  X-Runtime: 0.004146
   X-UA-Compatible: IE=Edge,chrome=1
 
   {"email":"email@example.com","name":"Old Name","paid":true}
@@ -103,7 +103,7 @@ Parameters:
   * email - Email of user that placed the order
 
 Request:
-  PUT /orders/11
+  PUT /orders/47
   Accept: application/json
   Content-Type: application/json
   Cookie: 
@@ -112,36 +112,24 @@ Request:
   {"order":{"name":"Updated Name"}}
 
 Response:
-  Status: 200 OK
-  Cache-Control: max-age=0, private, must-revalidate
-  Content-Length: 2
-  Content-Type: application/json; charset=utf-8
-  ETag: "99914b932bd37a50b983c5e7c90ae93b"
-  Location: http://example.org/orders/11
-  X-Runtime: 0.005130
+  Status: 204 No Content
+  Cache-Control: no-cache
+  X-Runtime: 0.007127
   X-UA-Compatible: IE=Edge,chrome=1
-
-  {}
 
 
 Deleting an order
 -----------------
 
 Request:
-  DELETE /orders/12
+  DELETE /orders/48
   Accept: application/json
   Content-Type: application/json
   Cookie: 
   Host: example.org
 
 Response:
-  Status: 200 OK
-  Cache-Control: max-age=0, private, must-revalidate
-  Content-Length: 2
-  Content-Type: application/json; charset=utf-8
-  ETag: "99914b932bd37a50b983c5e7c90ae93b"
-  Location: http://example.org/orders
-  X-Runtime: 0.005339
+  Status: 204 No Content
+  Cache-Control: no-cache
+  X-Runtime: 0.006217
   X-UA-Compatible: IE=Edge,chrome=1
-
-  {}
