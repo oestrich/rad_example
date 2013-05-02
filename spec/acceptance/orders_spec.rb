@@ -76,7 +76,7 @@ resource "Orders" do
     let(:raw_post) { params.to_json }
 
     example_request "Updating an order" do
-      status.should == 200
+      status.should == 204
     end
   end
 
@@ -84,7 +84,7 @@ resource "Orders" do
     let(:id) { order.id }
 
     example_request "Deleting an order" do
-      status.should == 200
+      status.should == 204
     end
   end
 end
