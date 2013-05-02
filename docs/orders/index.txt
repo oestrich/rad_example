@@ -19,7 +19,8 @@ Response:
   Content-Length: 121
   Content-Type: application/json; charset=utf-8
   ETag: "6cd5831e98b0090b64672b5604d9eb2a"
-  X-Runtime: 0.018795
+  X-Request-Id: fcb410ba08d00f11d0c8a5245d8509b5
+  X-Runtime: 0.045313
   X-UA-Compatible: IE=Edge,chrome=1
 
   [{"email":"email0@example.com","name":"Order 0","paid":true},{"email":"email1@example.com","name":"Order 1","paid":true}]
@@ -48,13 +49,15 @@ Response:
   Content-Length: 58
   Content-Type: application/json; charset=utf-8
   ETag: "5fffd66f61cdd4ab8881584dbf5e72cf"
-  Location: http://example.org/orders/45
-  X-Runtime: 0.010100
+  Location: http://example.org/orders/9
+  X-Request-Id: 990cc71c7d7f4940da24c06d9950a80a
+  X-Runtime: 0.008804
   X-UA-Compatible: IE=Edge,chrome=1
 
   {"email":"email@example.com","name":"Order 1","paid":true}
+
 Request:
-  GET /orders/45
+  GET /orders/9
   Accept: application/json
   Content-Type: application/json
   Cookie: 
@@ -66,7 +69,8 @@ Response:
   Content-Length: 58
   Content-Type: application/json; charset=utf-8
   ETag: "5fffd66f61cdd4ab8881584dbf5e72cf"
-  X-Runtime: 0.005744
+  X-Request-Id: 943ee508d730b780bc56f74e4e49cea3
+  X-Runtime: 0.006420
   X-UA-Compatible: IE=Edge,chrome=1
 
   {"email":"email@example.com","name":"Order 1","paid":true}
@@ -76,7 +80,7 @@ Getting a specific order
 ------------------------
 
 Request:
-  GET /orders/46
+  GET /orders/10
   Accept: application/json
   Content-Type: application/json
   Cookie: 
@@ -88,7 +92,8 @@ Response:
   Content-Length: 59
   Content-Type: application/json; charset=utf-8
   ETag: "d9eaba14696a65b9dfc66bf203d25a13"
-  X-Runtime: 0.004146
+  X-Request-Id: 7832d23b27021eef48f30f542658073d
+  X-Runtime: 0.004538
   X-UA-Compatible: IE=Edge,chrome=1
 
   {"email":"email@example.com","name":"Old Name","paid":true}
@@ -103,7 +108,7 @@ Parameters:
   * email - Email of user that placed the order
 
 Request:
-  PUT /orders/47
+  PUT /orders/11
   Accept: application/json
   Content-Type: application/json
   Cookie: 
@@ -114,7 +119,8 @@ Request:
 Response:
   Status: 204 No Content
   Cache-Control: no-cache
-  X-Runtime: 0.007127
+  X-Request-Id: 486dd6ac3a5e6bfe95b6decbff5936b2
+  X-Runtime: 0.008142
   X-UA-Compatible: IE=Edge,chrome=1
 
 
@@ -122,7 +128,7 @@ Deleting an order
 -----------------
 
 Request:
-  DELETE /orders/48
+  DELETE /orders/12
   Accept: application/json
   Content-Type: application/json
   Cookie: 
@@ -131,5 +137,6 @@ Request:
 Response:
   Status: 204 No Content
   Cache-Control: no-cache
-  X-Runtime: 0.006217
+  X-Request-Id: fddebd4c78098069792a647c40f5794a
+  X-Runtime: 0.006913
   X-UA-Compatible: IE=Edge,chrome=1
