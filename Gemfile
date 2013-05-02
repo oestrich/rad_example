@@ -21,5 +21,5 @@ end
 
 group :test, :development do
   gem 'rspec-rails'
-  gem 'rspec_api_documentation', :git => "git://github.com/zipmark/rspec_api_documentation.git"
+  gem 'rspec_api_documentation', :github => "zipmark/rspec_api_documentation"
 end
