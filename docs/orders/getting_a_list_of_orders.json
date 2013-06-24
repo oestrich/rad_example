@@ -1,1 +1,36 @@
-{"resource":"Orders","http_method":"GET","route":"/orders","description":"Getting a list of orders","explanation":null,"parameters":[{"name":"page","description":"Current page of orders"}],"requests":[{"request_method":"GET","request_path":"/orders?page=1","request_body":null,"request_headers":{"Accept":"application/json","Content-Type":"application/json","Host":"example.org","Cookie":""},"request_query_parameters":{"page":"1"},"request_content_type":"application/json","response_status":200,"response_status_text":"OK","response_body":"[{\"email\":\"email0@example.com\",\"name\":\"Order 0\",\"paid\":true},{\"email\":\"email1@example.com\",\"name\":\"Order 1\",\"paid\":true}]","response_headers":{"Content-Type":"application/json; charset=utf-8","X-UA-Compatible":"IE=Edge,chrome=1","ETag":"\"6cd5831e98b0090b64672b5604d9eb2a\"","Cache-Control":"max-age=0, private, must-revalidate","X-Request-Id":"0f387b60ffdc2847a392771045df8bf5","X-Runtime":"0.046103","Content-Length":"121"},"response_content_type":"application/json; charset=utf-8","curl":"curl \"http://rad-example.herokuapp.com/orders?page=1\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""}]}
+{
+  "resource": "Orders",
+  "http_method": "GET",
+  "route": "/orders",
+  "description": "Getting a list of orders",
+  "explanation": null,
+  "parameters": [
+    {
+      "name": "page",
+      "description": "Current page of orders"
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/orders?page=1",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "page": "1"
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[{\"email\":\"email0@example.com\",\"name\":\"Order 0\",\"paid\":true},{\"email\":\"email1@example.com\",\"name\":\"Order 1\",\"paid\":true}]",
+      "response_headers": {"Content-Type":"application/json; charset=utf-8","X-UA-Compatible":"IE=Edge,chrome=1","ETag":"\"6cd5831e98b0090b64672b5604d9eb2a\"","Cache-Control":"max-age=0, private, must-revalidate","X-Request-Id":"0c2dea13abae438356f910c95dfeed47","X-Runtime":"0.031794","Content-Length":"121"},
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://rad-example.herokuapp.com/orders?page=1\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+}
+  ]
+}

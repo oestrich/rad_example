@@ -1,1 +1,32 @@
-{"resource":"Orders","http_method":"DELETE","route":"/orders/:id","description":"Deleting an order","explanation":null,"parameters":[],"requests":[{"request_method":"DELETE","request_path":"/orders/258","request_body":null,"request_headers":{"Accept":"application/json","Content-Type":"application/json","Host":"example.org","Cookie":""},"request_query_parameters":{},"request_content_type":"application/json","response_status":204,"response_status_text":"No Content","response_body":null,"response_headers":{"X-UA-Compatible":"IE=Edge,chrome=1","Cache-Control":"no-cache","X-Request-Id":"92c49712d3543ea2127942884f8d55b4","X-Runtime":"0.005720"},"response_content_type":null,"curl":"curl \"http://rad-example.herokuapp.com/orders/258\" -d '' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""}]}
+{
+  "resource": "Orders",
+  "http_method": "DELETE",
+  "route": "/orders/:id",
+  "description": "Deleting an order",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "DELETE",
+      "request_path": "/orders/6",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 204,
+      "response_status_text": "No Content",
+      "response_body": null,
+      "response_headers": {"X-UA-Compatible":"IE=Edge,chrome=1","Cache-Control":"no-cache","X-Request-Id":"0aab9e4673f46aef5272760e94d97ff3","X-Runtime":"0.003413"},
+      "response_content_type": null,
+      "curl": "curl \"http://rad-example.herokuapp.com/orders/6\" -d '' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+}
+  ]
+}

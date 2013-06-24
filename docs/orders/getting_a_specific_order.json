@@ -1,1 +1,32 @@
-{"resource":"Orders","http_method":"GET","route":"/orders/:id","description":"Getting a specific order","explanation":null,"parameters":[],"requests":[{"request_method":"GET","request_path":"/orders/256","request_body":null,"request_headers":{"Accept":"application/json","Content-Type":"application/json","Host":"example.org","Cookie":""},"request_query_parameters":{},"request_content_type":"application/json","response_status":200,"response_status_text":"OK","response_body":"{\"email\":\"email@example.com\",\"name\":\"Old Name\",\"paid\":true}","response_headers":{"Content-Type":"application/json; charset=utf-8","X-UA-Compatible":"IE=Edge,chrome=1","ETag":"\"d9eaba14696a65b9dfc66bf203d25a13\"","Cache-Control":"max-age=0, private, must-revalidate","X-Request-Id":"25635333f22a40a62cdc1dcd987a782b","X-Runtime":"0.004173","Content-Length":"59"},"response_content_type":"application/json; charset=utf-8","curl":"curl \"http://rad-example.herokuapp.com/orders/256\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""}]}
+{
+  "resource": "Orders",
+  "http_method": "GET",
+  "route": "/orders/:id",
+  "description": "Getting a specific order",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/orders/4",
+      "request_body": null,
+      "request_headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"email\":\"email@example.com\",\"name\":\"Old Name\",\"paid\":true}",
+      "response_headers": {"Content-Type":"application/json; charset=utf-8","X-UA-Compatible":"IE=Edge,chrome=1","ETag":"\"d9eaba14696a65b9dfc66bf203d25a13\"","Cache-Control":"max-age=0, private, must-revalidate","X-Request-Id":"4ec1a919837154f8d1b8cdb6a86bd9ed","X-Runtime":"0.002398","Content-Length":"59"},
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"http://rad-example.herokuapp.com/orders/4\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+}
+  ]
+}

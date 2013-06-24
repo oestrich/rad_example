@@ -19,8 +19,8 @@ Response:
   Content-Length: 121
   Content-Type: application/json; charset=utf-8
   ETag: "6cd5831e98b0090b64672b5604d9eb2a"
-  X-Request-Id: 0f387b60ffdc2847a392771045df8bf5
-  X-Runtime: 0.046103
+  X-Request-Id: 0c2dea13abae438356f910c95dfeed47
+  X-Runtime: 0.031794
   X-UA-Compatible: IE=Edge,chrome=1
 
   [{"email":"email0@example.com","name":"Order 0","paid":true},{"email":"email1@example.com","name":"Order 1","paid":true}]
@@ -49,15 +49,15 @@ Response:
   Content-Length: 58
   Content-Type: application/json; charset=utf-8
   ETag: "5fffd66f61cdd4ab8881584dbf5e72cf"
-  Location: http://example.org/orders/255
-  X-Request-Id: 17248c7d5bd3d4c45263da4acdae7781
-  X-Runtime: 0.008309
+  Location: http://example.org/orders/3
+  X-Request-Id: 12e0917646313c6aded5f75a9fe44c01
+  X-Runtime: 0.006125
   X-UA-Compatible: IE=Edge,chrome=1
 
   {"email":"email@example.com","name":"Order 1","paid":true}
 
 Request:
-  GET /orders/255
+  GET /orders/3
   Accept: application/json
   Content-Type: application/json
   Cookie: 
@@ -69,8 +69,8 @@ Response:
   Content-Length: 58
   Content-Type: application/json; charset=utf-8
   ETag: "5fffd66f61cdd4ab8881584dbf5e72cf"
-  X-Request-Id: 93adf0c70296e74bc48616968e8fc565
-  X-Runtime: 0.005335
+  X-Request-Id: 15a3124363fe0ede740de18f38efbfde
+  X-Runtime: 0.003483
   X-UA-Compatible: IE=Edge,chrome=1
 
   {"email":"email@example.com","name":"Order 1","paid":true}
@@ -80,7 +80,7 @@ Getting a specific order
 ------------------------
 
 Request:
-  GET /orders/256
+  GET /orders/4
   Accept: application/json
   Content-Type: application/json
   Cookie: 
@@ -92,8 +92,8 @@ Response:
   Content-Length: 59
   Content-Type: application/json; charset=utf-8
   ETag: "d9eaba14696a65b9dfc66bf203d25a13"
-  X-Request-Id: 25635333f22a40a62cdc1dcd987a782b
-  X-Runtime: 0.004173
+  X-Request-Id: 4ec1a919837154f8d1b8cdb6a86bd9ed
+  X-Runtime: 0.002398
   X-UA-Compatible: IE=Edge,chrome=1
 
   {"email":"email@example.com","name":"Old Name","paid":true}
@@ -108,7 +108,7 @@ Parameters:
   * email - Email of user that placed the order
 
 Request:
-  PUT /orders/257
+  PUT /orders/5
   Accept: application/json
   Content-Type: application/json
   Cookie: 
@@ -119,8 +119,8 @@ Request:
 Response:
   Status: 204 No Content
   Cache-Control: no-cache
-  X-Request-Id: 2302edff06db82f80fca2a26a60a5210
-  X-Runtime: 0.007827
+  X-Request-Id: 0ee14b4de299e023eca35e2c8cfcfee8
+  X-Runtime: 0.004024
   X-UA-Compatible: IE=Edge,chrome=1
 
 
@@ -128,7 +128,7 @@ Deleting an order
 -----------------
 
 Request:
-  DELETE /orders/258
+  DELETE /orders/6
   Accept: application/json
   Content-Type: application/json
   Cookie: 
@@ -137,6 +137,6 @@ Request:
 Response:
   Status: 204 No Content
   Cache-Control: no-cache
-  X-Request-Id: 92c49712d3543ea2127942884f8d55b4
-  X-Runtime: 0.005720
+  X-Request-Id: 0aab9e4673f46aef5272760e94d97ff3
+  X-Runtime: 0.003413
   X-UA-Compatible: IE=Edge,chrome=1
