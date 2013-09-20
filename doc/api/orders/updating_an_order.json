@@ -6,25 +6,25 @@
   "explanation": null,
   "parameters": [
     {
+      "scope": "order",
       "name": "name",
-      "description": "Name of order",
-      "scope": "order"
+      "description": "Name of order"
     },
     {
+      "scope": "order",
       "name": "paid",
-      "description": "If the order has been paid for",
-      "scope": "order"
+      "description": "If the order has been paid for"
     },
     {
+      "scope": "order",
       "name": "email",
-      "description": "Email of user that placed the order",
-      "scope": "order"
+      "description": "Email of user that placed the order"
     }
   ],
   "requests": [
     {
       "request_method": "PUT",
-      "request_path": "/orders/5",
+      "request_path": "/orders/11",
       "request_body": "{\"order\":{\"name\":\"Updated Name\"}}",
       "request_headers": {
         "Accept": "application/json",
@@ -38,9 +38,9 @@
       "response_status": 204,
       "response_status_text": "No Content",
       "response_body": null,
-      "response_headers": {"X-UA-Compatible":"IE=Edge,chrome=1","Cache-Control":"no-cache","X-Request-Id":"0ee14b4de299e023eca35e2c8cfcfee8","X-Runtime":"0.004024"},
+      "response_headers": {"X-UA-Compatible":"IE=Edge,chrome=1","Cache-Control":"no-cache","X-Request-Id":"729d86508902dead44ad7cd8c44ba691","X-Runtime":"0.007278"},
       "response_content_type": null,
-      "curl": "curl \"http://rad-example.herokuapp.com/orders/5\" -d '{\"order\":{\"name\":\"Updated Name\"}}' -X PUT \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://rad-example.herokuapp.com/orders/11\" -d '{\"order\":{\"name\":\"Updated Name\"}}' -X PUT \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
 }
   ]
 }

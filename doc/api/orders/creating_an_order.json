@@ -6,21 +6,21 @@
   "explanation": "First, create an order, then make a later request to get it back",
   "parameters": [
     {
+      "required": true,
+      "scope": "order",
       "name": "name",
-      "description": "Name of order",
-      "required": true,
-      "scope": "order"
+      "description": "Name of order"
     },
     {
+      "required": true,
+      "scope": "order",
       "name": "paid",
-      "description": "If the order has been paid for",
-      "required": true,
-      "scope": "order"
+      "description": "If the order has been paid for"
     },
     {
+      "scope": "order",
       "name": "email",
-      "description": "Email of user that placed the order",
-      "scope": "order"
+      "description": "Email of user that placed the order"
     }
   ],
   "requests": [
@@ -40,13 +40,13 @@
       "response_status": 201,
       "response_status_text": "Created",
       "response_body": "{\"email\":\"email@example.com\",\"name\":\"Order 1\",\"paid\":true}",
-      "response_headers": {"Content-Type":"application/json; charset=utf-8","Location":"http://example.org/orders/3","X-UA-Compatible":"IE=Edge,chrome=1","ETag":"\"5fffd66f61cdd4ab8881584dbf5e72cf\"","Cache-Control":"max-age=0, private, must-revalidate","X-Request-Id":"12e0917646313c6aded5f75a9fe44c01","X-Runtime":"0.006125","Content-Length":"58"},
+      "response_headers": {"Content-Type":"application/json; charset=utf-8","Location":"http://example.org/orders/9","X-UA-Compatible":"IE=Edge,chrome=1","ETag":"\"5fffd66f61cdd4ab8881584dbf5e72cf\"","Cache-Control":"max-age=0, private, must-revalidate","X-Request-Id":"30b5b2a41f8d1c14939a8bccab82dbb8","X-Runtime":"0.010198","Content-Length":"58"},
       "response_content_type": "application/json; charset=utf-8",
       "curl": "curl \"http://rad-example.herokuapp.com/orders\" -d '{\"order\":{\"name\":\"Order 1\",\"paid\":true,\"email\":\"email@example.com\"}}' -X POST \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
 },
     {
 "request_method": "GET",
-"request_path": "/orders/3",
+"request_path": "/orders/9",
 "request_body": null,
 "request_headers": {
   "Accept": "application/json",
@@ -60,9 +60,9 @@
 "response_status": 200,
 "response_status_text": "OK",
 "response_body": "{\"email\":\"email@example.com\",\"name\":\"Order 1\",\"paid\":true}",
-"response_headers": {"Content-Type":"application/json; charset=utf-8","X-UA-Compatible":"IE=Edge,chrome=1","ETag":"\"5fffd66f61cdd4ab8881584dbf5e72cf\"","Cache-Control":"max-age=0, private, must-revalidate","X-Request-Id":"15a3124363fe0ede740de18f38efbfde","X-Runtime":"0.003483","Content-Length":"58"},
+"response_headers": {"Content-Type":"application/json; charset=utf-8","X-UA-Compatible":"IE=Edge,chrome=1","ETag":"\"5fffd66f61cdd4ab8881584dbf5e72cf\"","Cache-Control":"max-age=0, private, must-revalidate","X-Request-Id":"c9e24ad3accc8a22ba7554a5dfd1dee8","X-Runtime":"0.006183","Content-Length":"58"},
 "response_content_type": "application/json; charset=utf-8",
-"curl": "curl \"http://rad-example.herokuapp.com/orders/3\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+"curl": "curl \"http://rad-example.herokuapp.com/orders/9\" -X GET \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
 }
   ]
 }

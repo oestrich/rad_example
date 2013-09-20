@@ -10,7 +10,7 @@
   "requests": [
     {
       "request_method": "DELETE",
-      "request_path": "/orders/6",
+      "request_path": "/orders/12",
       "request_body": null,
       "request_headers": {
         "Accept": "application/json",
@@ -24,9 +24,9 @@
       "response_status": 204,
       "response_status_text": "No Content",
       "response_body": null,
-      "response_headers": {"X-UA-Compatible":"IE=Edge,chrome=1","Cache-Control":"no-cache","X-Request-Id":"0aab9e4673f46aef5272760e94d97ff3","X-Runtime":"0.003413"},
+      "response_headers": {"X-UA-Compatible":"IE=Edge,chrome=1","Cache-Control":"no-cache","X-Request-Id":"03661ced49f8c710afc9ba8c327d37dc","X-Runtime":"0.006099"},
       "response_content_type": null,
-      "curl": "curl \"http://rad-example.herokuapp.com/orders/6\" -d '' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
+      "curl": "curl \"http://rad-example.herokuapp.com/orders/12\" -d '' -X DELETE \\\n\t-H \"Accept: application/json\" \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \""
 }
   ]
 }
