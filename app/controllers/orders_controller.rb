@@ -1,6 +1,10 @@
 class OrdersController < ApplicationController
   respond_to :json
 
+  before_filter do
+    params.permit!
+  end
+
   def index
     render :json => Order.all
   end
